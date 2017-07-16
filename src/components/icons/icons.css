@@ -1,0 +1,118 @@
+.icon-wrapper {
+    z-index: 60;
+    height: 800px;
+    width: 800px;
+    border: 1px solid red;
+    background: black;
+    overflow-y: scroll;
+    /*display: flex;*/
+}
+
+.sprite { 
+    background: url('../../assets/spriteIcons.png');
+    background-repeat: no-repeat;
+}
+
+.sprite.iconSheet_0000_apple { background-position: 0 0; width: 30px; } 
+.sprite.iconSheet_0001_grid { background-position: 0 -56px; width: 44px; height: 48px; } 
+.sprite.iconSheet_0002_network { background-position: 0 -114px; height: 44px; } 
+.sprite.iconSheet_0003_hammer-wrench { background-position: 0 -168px; height: 42px; } 
+.sprite.iconSheet_0004_wrench { background-position: 0 -220px; width: 43px; height: 42px; } 
+.sprite.iconSheet_0005_mf-box { background-position: 0 -272px; width: 42px; height: 44px; } 
+.sprite.iconSheet_0006_zone { background-position: 0 -326px; width: 46px; height: 48px; } 
+.sprite.iconSheet_0007_workers { background-position: 0 -384px; width: 44px; height: 48px; } 
+.sprite.iconSheet_0008_wizard-hat { background-position: 0 -442px; width: 45px; height: 36px; } 
+.sprite.iconSheet_0009_warehouse { background-position: 0 -488px; height: 18px; } 
+.sprite.iconSheet_0010_warehouse-2 { background-position: 0 -516px; height: 38px; } 
+.sprite.iconSheet_0011_undo { background-position: 0 -564px; width: 30px; height: 45px; } 
+.sprite.iconSheet_0012_semi-truck { background-position: 0 -619px; height: 22px; } 
+.sprite.iconSheet_0013_trashcan { background-position: 0 -651px; width: 44px; } 
+.sprite.iconSheet_0014_toilet { background-position: 0 -707px; width: 32px; height: 45px; } 
+.sprite.iconSheet_0015_shapes { background-position: 0 -762px; width: 38px; } 
+.sprite.iconSheet_0016_sync { background-position: 0 -818px; height: 36px; } 
+.sprite.iconSheet_0017_swipe { background-position: 0 -864px; width: 32px; } 
+.sprite.iconSheet_0018_dollar-stack { background-position: 0 -920px; width: 42px; height: 48px; } 
+.sprite.iconSheet_0019_snowflake { background-position: 0 -978px; width: 41px; height: 48px; } 
+.sprite.iconSheet_0020_smallparcel { background-position: 0 -1036px; width: 47px; height: 22px; } 
+.sprite.iconSheet_0021_sliders { background-position: 0 -1068px; width: 47px; height: 32px; } 
+.sprite.iconSheet_0022_cart { background-position: 0 -1110px; width: 46px; height: 44px; } 
+.sprite.iconSheet_0023_box-waves { background-position: 0 -1164px; width: 45px; height: 28px; } 
+.sprite.iconSheet_0024_boat { background-position: 0 -1202px; height: 25px; } 
+.sprite.iconSheet_0025_paper-airplane { background-position: 0 -1237px; width: 38px; height: 44px; } 
+.sprite.iconSheet_0026_scales { background-position: 0 -1291px; width: 42px; } 
+.sprite.iconSheet_0027_save { background-position: 0 -1347px; width: 44px; height: 43px; } 
+.sprite.iconSheet_0028_comedy-tragedy { background-position: 0 -1400px; width: 39px; } 
+.sprite.iconSheet_0029_tree-bubbles { background-position: 0 -1456px; width: 36px; height: 48px; } 
+.sprite.iconSheet_0030_paper-graphs { background-position: 0 -1514px; width: 34px; height: 44px; } 
+.sprite.iconSheet_0031_question-styled { background-position: 0 -1568px; width: 33px; height: 44px; } 
+.sprite.iconSheet_0032_printer { background-position: 0 -1622px; height: 34px; } 
+.sprite.iconSheet_0033_pushpin { background-position: 0 -1666px; width: 19px; } 
+.sprite.iconSheet_0034_lock-unlocked { background-position: 0 -1722px; width: 46px; } 
+.sprite.iconSheet_0035_palette { background-position: 0 -1778px; width: 45px; } 
+.sprite.iconSheet_0036_copy-paper { background-position: 0 -1834px; width: 40px; height: 48px; } 
+.sprite.iconSheet_0037_eye-lashes { background-position: 0 -1892px; width: 44px; height: 40px; } 
+.sprite.iconSheet_0038_speech-box { background-position: 0 -1942px; } 
+.sprite.iconSheet_0039_note { background-position: 0 -1998px; width: 43px; height: 43px; } 
+.sprite.iconSheet_0040_box-logo { background-position: 0 -2051px; height: 44px; } 
+.sprite.iconSheet_0041_folder-open { background-position: 0 -2105px; width: 46px; height: 42px; } 
+.sprite.iconSheet_0042_sheep { background-position: 0 -2157px; width: 47px; height: 32px; } 
+.sprite.iconSheet_0043_motoscanner { background-position: 0 -2199px; width: 32px; } 
+.sprite.iconSheet_0044_mobile-open { background-position: 0 -2255px; width: 25px; } 
+.sprite.iconSheet_0045_minimize { background-position: 0 -2311px; width: 42px; height: 44px; } 
+.sprite.iconSheet_0046_map { background-position: 0 -2365px; width: 39px; height: 40px; } 
+.sprite.iconSheet_0047_wrench-screen { background-position: 0 -2415px; } 
+.sprite.iconSheet_0048_key { background-position: 0 -2471px; height: 20px; } 
+.sprite.iconSheet_0049_lock-locked { background-position: 0 -2501px; width: 34px; height: 44px; } 
+.sprite.iconSheet_0050_Locations---Copy { background-position: 0 -2555px; width: 47px; height: 42px; } 
+.sprite.iconSheet_0051_shelves { background-position: 0 -2607px; height: 45px; } 
+.sprite.iconSheet_0052_chain-link { background-position: 0 -2662px; width: 41px; height: 44px; } 
+.sprite.iconSheet_0053_layout { background-position: 0 -2716px; width: 46px; height: 48px; } 
+.sprite.iconSheet_0054_globe { background-position: 0 -2774px; width: 40px; height: 44px; } 
+.sprite.iconSheet_0055_keyboard { background-position: 0 -2828px; height: 39px; } 
+.sprite.iconSheet_0056_treasure-chest { background-position: 0 -2877px; width: 44px; height: 48px; } 
+.sprite.iconSheet_0057_box-stack { background-position: 0 -2935px; width: 46px; height: 47px; } 
+.sprite.iconSheet_0058_paper-arrow-in { background-position: 0 -2992px; width: 44px; height: 48px; } 
+.sprite.iconSheet_0059_house { background-position: 0 -3050px; width: 43px; } 
+.sprite.iconSheet_0060_book { background-position: 0 -3106px; width: 39px; } 
+.sprite.iconSheet_0061_clock-arrow { background-position: 0 -3162px; width: 43px; height: 48px; } 
+.sprite.iconSheet_0062_hello-name-tag { background-position: 0 -3220px; width: 44px; height: 34px; } 
+.sprite.iconSheet_0063_hammer { background-position: 0 -3264px; width: 43px; } 
+.sprite.iconSheet_0064_forklift { background-position: 0 -3320px; width: 47px; height: 34px; } 
+.sprite.iconSheet_0065_folder { background-position: 0 -3364px; width: 47px; height: 30px; } 
+.sprite.iconSheet_0066_search-grid { background-position: 0 -3404px; width: 47px; height: 48px; } 
+.sprite.iconSheet_0067_building { background-position: 0 -3462px; width: 46px; height: 34px; } 
+.sprite.iconSheet_0068_eye { background-position: 0 -3506px; width: 44px; height: 32px; } 
+.sprite.iconSheet_0069_paper-arrow-out { background-position: 0 -3548px; } 
+.sprite.iconSheet_0070_paper-waves { background-position: 0 -3604px; width: 44px; height: 33px; } 
+.sprite.iconSheet_0071_box-arrow-out { background-position: 0 -3647px; width: 42px; } 
+.sprite.iconSheet_0072_exit { background-position: 0 -3703px; width: 32px; } 
+.sprite.iconSheet_0073_triangle-exclaim { background-position: 0 -3759px; width: 45px; height: 43px; } 
+.sprite.iconSheet_0074_frowny-pixel { background-position: 0 -3812px; width: 46px; height: 36px; } 
+.sprite.iconSheet_0075_eraser { background-position: 0 -3858px; width: 45px; height: 30px; } 
+.sprite.iconSheet_0076_editrow---Copy { background-position: 0 -3898px; height: 32px; } 
+.sprite.iconSheet_0077_pencil { background-position: 0 -3940px; width: 40px; height: 43px; } 
+.sprite.iconSheet_0078_drag-n-dorp { background-position: 0 -3993px; width: 47px; height: 34px; } 
+.sprite.iconSheet_0079_cloud-down { background-position: 0 -4037px; width: 45px; height: 43px; } 
+.sprite.iconSheet_0080_cycle-count { background-position: 0 -4090px; width: 46px; height: 40px; } 
+.sprite.iconSheet_0081_field-brush { background-position: 0 -4140px; width: 43px; height: 36px; } 
+.sprite.iconSheet_0082_people-box { background-position: 0 -4186px; width: 42px; height: 48px; } 
+.sprite.iconSheet_0083_person-package-delivery { background-position: 0 -4244px; width: 36px; height: 48px; } 
+.sprite.iconSheet_0084_people-ties { background-position: 0 -4302px; width: 34px; height: 48px; } 
+.sprite.iconSheet_0085_people-multi { background-position: 0 -4360px; width: 47px; height: 44px; } 
+.sprite.iconSheet_0086_truck-delivery { background-position: 0 -4414px; height: 24px; } 
+.sprite.iconSheet_0087_computer { background-position: 0 -4448px; height: 40px; } 
+.sprite.iconSheet_0088_in-box { background-position: 0 -4498px; width: 46px; height: 40px; } 
+.sprite.iconSheet_0089_power-cord { background-position: 0 -4548px; height: 20px; } 
+.sprite.iconSheet_0090_compass { background-position: 0 -4578px; width: 41px; height: 44px; } 
+.sprite.iconSheet_0091_sky-scraper { background-position: 0 -4632px; width: 16px; height: 48px; } 
+.sprite.iconSheet_0092_tree-box { background-position: 0 -4690px; width: 39px; height: 48px; } 
+.sprite.iconSheet_0093_cloud-up { background-position: 0 -4748px; width: 47px; height: 45px; } 
+.sprite.iconSheet_0094_clipboard { background-position: 0 -4803px; height: 40px; } 
+.sprite.iconSheet_0095_truck { background-position: 0 -4853px; width: 47px; height: 28px; } 
+.sprite.iconSheet_0096_credit-card { background-position: 0 -4891px; height: 45px; } 
+.sprite.iconSheet_0097_camera-alt { background-position: 0 -4946px; width: 45px; height: 36px; } 
+.sprite.iconSheet_0098_calculator { background-position: 0 -4992px; width: 42px; } 
+.sprite.iconSheet_0099_calander { background-position: 0 -5048px; width: 46px; height: 42px; } 
+.sprite.iconSheet_0100_bricks { background-position: 0 -5100px; width: 40px; } 
+.sprite.iconSheet_0101_plus-grd { background-position: 0 -5156px; height: 41px; } 
+.sprite.iconSheet_0102_point { background-position: 0 -5207px; width: 58px; height: 34px; } 
