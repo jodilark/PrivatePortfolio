@@ -1,0 +1,20 @@
+.portfolio-wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.port-piece-container {
+    height: 40vw;
+    /* width: 100%; */
+    /* max-width: 700px; */
+    background: purple;
+}
+
+.port-info {
+    /* height: 50px; */
+}
+
+.port-info li {
+    list-style: none;
+}
