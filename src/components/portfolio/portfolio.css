@@ -5,8 +5,8 @@
     overflow-y: scroll;
     border: 2px solid #112;
     border-radius: 2px;
-    background: url('../../assets/ocean.jpg');
-    background-size: cover;
+    background: url('../../assets/2.jpg');
+     background-size: cover; 
 }
 
 ::-webkit-scrollbar {
