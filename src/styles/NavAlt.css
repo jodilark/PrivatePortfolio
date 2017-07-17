@@ -1,10 +1,16 @@
-div {
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/* div {
     background: rgba(0, 0, 0, .05);
     border: 1px solid red;
-}
+} */
 
 body {
     overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-container {
+    background: #f4f4f4
 }
 
 .nav-wrapper {
@@ -19,27 +25,28 @@ body {
     position: fixed;
     top: 0px;
     text-align: center;
-    /*cursor: pointer;*/
     z-index: 50;
     position: fixed;
     bottom: 50%;
     text-align: center;
-    /*width: 100px;*/
     height: 20px;
     padding-bottom: 0px;
-    margin-bottom: 50px;
-    margin-top: 10px;
     border-bottom: solid 6px rgba(0,0,0,0);
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 24px;
     letter-spacing: 4px;
     text-indent: 4px;   
-    height:30px;
-    line-height: 30px;
+    height:40px;
+    line-height: 40px;
+    background: lightcyan;
+    border-bottom: 1px solid gray;
+    box-shadow: 0px 3px 5px #888888;
+    color: #444;
 }
 
 .right {
-    right: -105px;
+    right: -100px;
+    box-shadow: -3px -3px 5px rgba(0,0,0,.5)
 }
 
 .bottom {
@@ -60,17 +67,21 @@ body {
     height: 37px;
     padding-bottom: 0px;
     margin-bottom: 50px;
-    border-bottom: solid 6px rgba(0,0,0,0);
+    border-top: solid 2px #112;
     font-weight: bold;
     font-size: 24px;
     letter-spacing: 4px;
     text-indent: 4px;
     vertical-align: middle;
     line-height: 35px;    
+    background: #f4f4f4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .left {
-    left: -95px;
+    left: -97px;
+    box-shadow: 3px -3px 5px rgba(0,0,0,.5)
 }
 
 .main-container {
@@ -88,3 +99,5 @@ body {
     width: 100%;
     height: 100%;
 }
+
+

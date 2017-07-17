@@ -2,19 +2,87 @@
     height: 100%;
     width: 100%;
     padding: 10px;
+    overflow-y: scroll;
+    border: 2px solid #112;
+    border-radius: 2px;
+    background: url('../../assets/ocean.jpg');
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    opacity: 20%; 
+    /* border-radius: 10px; */
+}
+ 
+::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 .port-piece-container {
     height: 40vw;
-    /* width: 100%; */
-    /* max-width: 700px; */
     background: purple;
 }
 
 .port-info {
     /* height: 50px; */
+    background: rgba(0,0,0,0.5);
+    color: #f4f4f4;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 5px;
 }
 
 .port-info li {
     list-style: none;
+}
+
+#info-3 {
+    margin-bottom: 156px;
+}
+
+#project-1 {
+    background: url('../../assets/anotherATT.PNG');
+    background-size: cover;
+}
+
+.project2-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.3);
+}
+
+#project-2 {
+    background: url('../../assets/ffxivphone.png');
+    background-size: cover;
+    height: 45vw;
+    width: 25vw;
+    background-repeat: no-repeat;
+    min-height: 435px;
+    min-width: 242px;
+}
+
+#info-2 {
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+a {
+    color: inherit;
+}
+
+#project-3 {
+    margin-top: 35px;
+    background: url('../../assets/receipt.png');
+    background-size: cover;
 }
