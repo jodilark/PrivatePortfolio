@@ -31,9 +31,9 @@ export default function Portfolio() {
             <div className='port-info'>
                 <ul>
                     <li>{projects[0].siteName} | <a href={projects[0].link} target='_blank'>{projects[0].link}</a></li>
-                    <li>Tech | <span>{projects[0].tech}</span></li>
-                    <li>Role | <span>{projects[0].role}</span></li>
-                    <li>Description | <span>{projects[0].description}</span></li>
+                    <li>Tech: <span>{projects[0].tech}</span></li>
+                    <li>Role: <span>{projects[0].role}</span></li>
+                    <li>Description: <span>{projects[0].description}</span></li>
                 </ul>
             </div>
             <div className='project2-container'>
@@ -41,9 +41,9 @@ export default function Portfolio() {
                 <div className='port-info' id='info-2'>
                     <ul>
                         <li>{projects[1].siteName} | <a href={projects[1].link} target='_blank'>{projects[1].link}</a></li>
-                        <li>Tech | <span>{projects[1].tech}</span></li>
-                        <li>Role | <span>{projects[1].role}</span></li>
-                        <li>Description | <span>{projects[1].description}</span></li>
+                        <li>Tech: <span>{projects[1].tech}</span></li>
+                        <li>Role: <span>{projects[1].role}</span></li>
+                        <li>Description: <span>{projects[1].description}</span></li>
                     </ul>
                 </div>
             </div>
@@ -51,9 +51,9 @@ export default function Portfolio() {
             <div className='port-info' id='info-3'>
                 <ul>
                     <li>{projects[2].siteName} | <a href={projects[2].link} target='_blank'>{projects[2].link}</a></li>
-                    <li>Tech | <span>{projects[2].tech}</span></li>
-                    <li>Role | <span>{projects[2].role}</span></li>
-                    <li>Description | <span>{projects[2].description}</span></li>
+                    <li>Tech: <span>{projects[2].tech}</span></li>
+                    <li>Role: <span>{projects[2].role}</span></li>
+                    <li>Description: <span>{projects[2].description}</span></li>
                 </ul>
             </div>
         </div>
