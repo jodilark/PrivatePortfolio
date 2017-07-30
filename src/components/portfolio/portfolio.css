@@ -1,9 +1,9 @@
 .portfolio-wrapper {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     padding: 10px;
     overflow-y: scroll;
-    border: 2px solid #112;
+    /* border: 2px solid #112; */
     border-radius: 2px;
     background: url('../../assets/2.jpg');
      background-size: cover; 
@@ -57,6 +57,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 35px;
+    margin-bottom: 35px;
     border: 2px solid gray;
     border-radius: 3px;
     background: rgba(0,0,0,0.3);
@@ -82,7 +83,6 @@ a {
 }
 
 #project-3 {
-    margin-top: 35px;
     background: url('../../assets/receipt.png');
     background-size: cover;
 }

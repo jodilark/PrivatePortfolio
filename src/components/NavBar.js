@@ -7,7 +7,7 @@ export default function NavBar() {
             <div className='logo-wrapper'>
                 <div className='logo-container'></div>
             </div>
-            <div className='name-wrapper'>Jodi Parker | UX/UI Designer | Web Developer</div>
+            <div className='name-wrapper'></div>
             <div className='links-wrapper'>
                 <ul className='links-container'>
                     <li>About</li>

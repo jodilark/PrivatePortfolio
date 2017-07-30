@@ -6,6 +6,7 @@ export default function Portfolio() {
         {
             siteName: 'All The Things'
             , link: 'https://allthethngs.com'
+            , github: 'https://github.com/jodilark/allthethings'
             , tech: ['Angular, ', 'Node, ', 'Express, ', 'SQL, ', 'Quokka Barcode, ', 'Auth0']
             , role: 'Full Stack Developer'
             , description: 'An app that allows you to keep a record of all the items you own and where they are stored.'
@@ -13,6 +14,7 @@ export default function Portfolio() {
         {
             siteName: 'Final Fantasy XIV Shopping List'
             , link: 'http://cute-route.surge.sh/#!/'
+            , github: 'https://github.com/jodilark/noServerProject'
             , tech: ['Angular, ', 'Node']
             , role: 'Front-End Developer'
             , description: 'Add-on application for a video game that allows you to easily search for in-game content'
@@ -20,6 +22,7 @@ export default function Portfolio() {
         {
             siteName: '3PL Central Warehouse Management System'
             , link: 'http://2h9nk7.axshare.com/#g=1&p=receiptsfeature&c=1'
+            , github: 'Private'
             , tech: ['Axure, ', 'Photoshop']
             , role: 'UX/UI Design'
             , description: 'Total Redesign of a 2008 based warehouse management software. (Prototype only due to company access restrictions)'
@@ -27,10 +30,12 @@ export default function Portfolio() {
     ]
     return (
         <div className='portfolio-wrapper'>
+            <div><p>Web Developer Projects</p></div>
             <div className='port-piece-container' id='project-1'></div>
             <div className='port-info'>
                 <ul>
                     <li>{projects[0].siteName} | <a href={projects[0].link} target='_blank'>{projects[0].link}</a></li>
+                    <li>Github: <a href={projects[0].github} target='blank'>{projects[0].github}</a></li>
                     <li>Tech: <span>{projects[0].tech}</span></li>
                     <li>Role: <span>{projects[0].role}</span></li>
                     <li>Description: <span>{projects[0].description}</span></li>
@@ -41,12 +46,14 @@ export default function Portfolio() {
                 <div className='port-info' id='info-2'>
                     <ul>
                         <li>{projects[1].siteName} | <a href={projects[1].link} target='_blank'>{projects[1].link}</a></li>
+                        <li>Github: <a href={projects[1].github} target='blank'>{projects[1].github}</a></li>
                         <li>Tech: <span>{projects[1].tech}</span></li>
                         <li>Role: <span>{projects[1].role}</span></li>
                         <li>Description: <span>{projects[1].description}</span></li>
                     </ul>
                 </div>
             </div>
+            <div><p>UX/UI Designer Projects</p></div>
             <div className='port-piece-container' id='project-3'></div>
             <div className='port-info' id='info-3'>
                 <ul>

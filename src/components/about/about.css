@@ -1,0 +1,78 @@
+.about-wrapper {
+    z-index: 50;
+    /* width:100vw;  */
+    height:85vh;
+    /* border: 1px solid red;  */
+    position: fixed; 
+    bottom:0px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-wrapper li {
+    list-style: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:70px;
+}
+
+.about-wrapper p {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f4f4f4;
+    line-height: 20px;
+}
+
+.about-container {
+    min-width: 235px;
+     max-width: 1440px;
+    width: 1000px; 
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, .7);
+    color: #f4f4f4;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 97%;
+}
+
+.profile div {
+    /* border: 2px dashed red; */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     height: 100%; 
+}
+
+.profile-container div {
+    height: 100%;
+    flex:1;
+    padding:20px;
+    text-align: left;
+}
+
+#me-picture {
+    background: url('../../assets/corgi.png');
+    background-size: cover;
+}
+
+#like-picture {
+    background: url('../../assets/corgi.png');
+    background-size: cover;
+}
+
+.text {
+    padding:
+}
