@@ -30,16 +30,17 @@ export default function Portfolio() {
     ]
     return (
         <div className='portfolio-wrapper'>
-            <div><p>Web Developer Projects</p></div>
-            <div className='port-piece-container' id='project-1'></div>
-            <div className='port-info'>
-                <ul>
-                    <li>{projects[0].siteName} | <a href={projects[0].link} target='_blank'>{projects[0].link}</a></li>
-                    <li>Github: <a href={projects[0].github} target='blank'>{projects[0].github}</a></li>
-                    <li>Tech: <span>{projects[0].tech}</span></li>
-                    <li>Role: <span>{projects[0].role}</span></li>
-                    <li>Description: <span>{projects[0].description}</span></li>
-                </ul>
+            <div><p className='role-titles'>Web Developer Projects</p></div>
+            <div className='port-piece-container' id='project-1'>
+                <div className='port-info'>
+                    <ul>
+                        <li>{projects[0].siteName} | <a href={projects[0].link} target='_blank'>{projects[0].link}</a></li>
+                        <li>Github: <a href={projects[0].github} target='blank'>{projects[0].github}</a></li>
+                        <li>Tech: <span>{projects[0].tech}</span></li>
+                        <li>Role: <span>{projects[0].role}</span></li>
+                        <li>Description: <span>{projects[0].description}</span></li>
+                    </ul>
+                </div>
             </div>
             <div className='project2-container'>
                 <div className='port-piece-container' id='project-2'></div>
@@ -53,15 +54,16 @@ export default function Portfolio() {
                     </ul>
                 </div>
             </div>
-            <div><p>UX/UI Designer Projects</p></div>
-            <div className='port-piece-container' id='project-3'></div>
-            <div className='port-info' id='info-3'>
-                <ul>
-                    <li>{projects[2].siteName} | <a href={projects[2].link} target='_blank'>{projects[2].link}</a></li>
-                    <li>Tech: <span>{projects[2].tech}</span></li>
-                    <li>Role: <span>{projects[2].role}</span></li>
-                    <li>Description: <span>{projects[2].description}</span></li>
-                </ul>
+            <div><p className='role-titles'>UX/UI Designer Projects</p></div>
+            <div className='port-piece-container' id='project-3'>
+                <div className='port-info' id='info-3'>
+                    <ul>
+                        <li>{projects[2].siteName} | <a href={projects[2].link} target='_blank'>{projects[2].link}</a></li>
+                        <li>Tech: <span>{projects[2].tech}</span></li>
+                        <li>Role: <span>{projects[2].role}</span></li>
+                        <li>Description: <span>{projects[2].description}</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

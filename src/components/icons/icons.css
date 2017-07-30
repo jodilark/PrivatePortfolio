@@ -2,7 +2,7 @@
     z-index: 60;
     height: 800px;
     width: 800px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: black;
     overflow-y: scroll;
     /*display: flex;*/
