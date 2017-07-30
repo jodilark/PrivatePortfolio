@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import Content from '../components/portfolio/Portfolio';
-// import NavAlt from '../components/NavAlt';
 import Contact from '../components/contact/Contact'
 import About from '../components/about/About'
 import '../styles/Home.css'

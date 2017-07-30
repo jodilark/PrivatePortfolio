@@ -8,7 +8,7 @@ export default class NavBar extends Component {
                 <div className='logo-wrapper'>
                     <div className='logo-container'></div>
                 </div>
-                <div className='name-wrapper'></div>
+                <div className='name-wrapper'>Site is still under development...</div>
                 <div className='links-wrapper'>
                     <ul className='links-container'>
                         <li onClick={_ => this.props.actionShowAbout()}>About</li>
