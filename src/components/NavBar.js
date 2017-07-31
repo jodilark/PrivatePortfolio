@@ -12,7 +12,6 @@ export default class NavBar extends Component {
                 <div className='links-wrapper'>
                     <ul className='links-container'>
                         <li onClick={_ => this.props.actionShowAbout()}>About</li>
-                        <li>Portfolio</li>
                         <li onClick={_ => this.props.actionShowContact()}>Contact</li>
                     </ul>
                 </div>

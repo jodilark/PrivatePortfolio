@@ -52,12 +52,12 @@ class Home extends Component {
                 <Content />
                 {
                     this.state.contactVisible
-                        ? <Contact />
+                        ? <Contact actionShowContact={this.showContact} />
                         : null
                 }
                 {
                     this.state.aboutVisible
-                        ? <About />
+                        ? <About actionShowAbout={this.showAbout} />
                         : null
                 }
             </div>

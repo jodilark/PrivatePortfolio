@@ -33,6 +33,7 @@
     padding: 20px;
     background: rgba(0, 0, 0, .7);
     color: #f4f4f4;
+    position: relative;
 }
 
 .social {
@@ -58,4 +59,12 @@
     color: #f8f8f8;
     font-size: 25px;
     line-height: 25px;
+}
+
+.closingX {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    cursor: pointer;
 }

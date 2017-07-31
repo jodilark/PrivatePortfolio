@@ -28,6 +28,8 @@
     height: 40vw;
     background: purple;
     position: relative;
+    border: 2px solid gray;
+    border-radius: 3px;
 }
 
 .port-info {
@@ -91,13 +93,17 @@ a {
 }
 
 .role-titles {
+    height: 3px;
+    width: 100%;
+    background-image: -webkit-linear-gradient(right, rgba(180, 189, 195, .5) 0%, #718496 100%);
+     margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+.role-title-text {
     height: 30px;
     line-height: 30px;
     font-size: 20px;
     width: 100%;
-    background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #00A3EF 100%);
-     margin-bottom: 5px; 
-    padding-left: 10px;
-    color: white;
-    border-radius: 2px;
+    color: white; 
 }

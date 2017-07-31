@@ -17,7 +17,7 @@
 }
 
 .logo-wrapper {
-    flex: 1;
+    width:67px;
 }
 
 .logo-container {
@@ -28,7 +28,6 @@
 }
 
 .name-wrapper {
-    flex:1;
     text-align: center;
 }
 
@@ -45,7 +44,7 @@
 
 .links-container li:hover {
     /* background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #00A3EF 100%); */
-    background: #00A3EF;
+    background: #061F3E;
     color: white;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
     text-shadow: 0px 1px 1px black;

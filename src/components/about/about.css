@@ -1,7 +1,8 @@
 .about-wrapper {
     z-index: 50;
     /* width:100vw;  */
-    height:85vh;
+    max-height:400px;
+    height:50vh;
     /* border: 1px solid red;  */
     position: fixed; 
     bottom:0px;
@@ -20,7 +21,7 @@
     height:70px;
 }
 
-.about-wrapper p {
+.about-container-text {
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #f4f4f4;
@@ -64,8 +65,10 @@
 }
 
 #me-picture {
-    background: url('../../assets/corgi.png');
+    background: url('../../assets/Joda.JPG');
     background-size: cover;
+    border-radius: 26%;
+    border: 2px solid gray; 
 }
 
 #like-picture {
@@ -73,6 +76,17 @@
     background-size: cover;
 }
 
-.text {
-    padding:
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.closingX {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    cursor: pointer;
 }

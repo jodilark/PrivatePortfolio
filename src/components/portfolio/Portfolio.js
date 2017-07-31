@@ -30,7 +30,8 @@ export default function Portfolio() {
     ]
     return (
         <div className='portfolio-wrapper'>
-            <div><p className='role-titles'>Web Developer Projects</p></div>
+            <p className='role-title-text'>Web Developer Projects</p>
+            <div className='role-titles'></div>
             <div className='port-piece-container' id='project-1'>
                 <div className='port-info'>
                     <ul>
@@ -54,7 +55,8 @@ export default function Portfolio() {
                     </ul>
                 </div>
             </div>
-            <div><p className='role-titles'>UX/UI Designer Projects</p></div>
+            <p className='role-title-text'>UX/UI Designer Projects</p>
+            <div className='role-titles'></div>
             <div className='port-piece-container' id='project-3'>
                 <div className='port-info' id='info-3'>
                     <ul>
