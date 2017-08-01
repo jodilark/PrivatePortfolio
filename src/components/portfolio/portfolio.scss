@@ -24,45 +24,47 @@
 
 .port-piece-container {
     height: 40vw;
-    background: purple;
     position: relative;
+    margin-bottom: 50px;
     @include borders;
+    background: purple;
 }
 
 .port-info {
     width: 100%;
-    background: rgba(0,0,0,0.5);
-    color: $color-one;
-    @include standard-text;
     position: absolute;
     bottom: 0px;
     left: 0px;
+    // line-height: 20px;
+    @include standard-text;
+    color: $color-one;
+    background: $alpha-background;
+}
+
+.port-info ul {
+    padding: 10px;
 }
 
 .port-info li {
     list-style: none;
 }
 
+#charmi {
+    background: url('../../assets/charmi.png');
+    background-size: cover;
+    height: 45vw;
+    width: 25vw;
+    background-repeat: no-repeat;
+    min-height: 435px;
+    min-width: 242px;    
+}
 
-
-#project-1 {
+#att {
     background: url('../../assets/anotherATT.PNG');
     background-size: cover;
 }
 
-.project2-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    @include borders;
-    background: rgba(0,0,0,0.3);
-    position: relative;
-}
-
-#project-2 {
+#ffxivsl {
     background: url('../../assets/ffxivphone.png');
     background-size: cover;
     height: 45vw;
@@ -72,28 +74,29 @@
     min-width: 242px;
 }
 
-#info-2 {
-    width: 100%;
-    background: rgba(0,0,0,0.2);
+#tpl {
+    background: url('../../assets/receipt.png');
+    background-size: cover;
+}
+
+.mobile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    @include borders;
+    background: rgba(0,0,0,0.3);
+    position: relative;
 }
 
 a {
     color: inherit;
 }
 
-#project-3 {
-    background: url('../../assets/receipt.png');
-    background-size: cover;
-}
-
-.role-titles {
-    height: 3px;
-    width: 100%;
-    background-image: -webkit-linear-gradient(right, rgba(180, 189, 195, .5) 0%, #718496 100%);
-    margin-bottom: 5px;
-    border-radius: 2px;
-}
 
 .role-title-text {
     @include titles;
+    margin-bottom: 20px;
+    border-bottom: 2px solid $color-one;
 }

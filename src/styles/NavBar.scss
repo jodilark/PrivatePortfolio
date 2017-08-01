@@ -2,28 +2,38 @@
 
 .nav-wrapper {
     width: 100vw;
+    height: 53px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, .5);
     z-index: 1000;
+    background: $color-three;
 }
 
 .logo-wrapper {
-    width:67px;
+    width:46px;
 }
 
 .logo-container {
-    height: 50px;
-    width: 50px;
-    background: url('../assets/corgi.png');
+    height: 30px;
+    width: 30px;
+    background: url('../assets/mylogo2.png');
     background-size: cover;
 }
 
 .name-wrapper {
     text-align: center;
+    color: $color-four;
+}
+
+.my-titles {
+    font-family: $font-three;
+    letter-spacing: 3px;
+    font-size: 1.4em;
+    color: $color-four;    
 }
 
 .links-wrapper {
@@ -38,8 +48,7 @@
 }
 
 .links-container li:hover {
-    /* background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #00A3EF 100%); */
-    @include nav-button-hover;
+@include nav-button-hover;
 }
 
 .links-container li {
