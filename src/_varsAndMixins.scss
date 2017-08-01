@@ -1,0 +1,13 @@
+// »»»»»»»»»»»»»»»»»»»║ FONTS
+@import url('https://fonts.googleapis.com/css?family=Fresca|Josefin+Sans|Source+Code+Pro');
+
+// »»»»»»»»»»»»»»»»»»»║ VARIABLES
+// ...........home
+$wrapper-widths: 1380px;
+$primary-color: #595C80;
+
+// »»»»»»»»»»»»»»»»»»»║ TESTS
+@mixin box-tester {
+    border: 1px solid red;
+    // background: rgba(200, 0, 50, .1);
+}
