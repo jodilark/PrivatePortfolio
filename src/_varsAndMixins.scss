@@ -1,14 +1,20 @@
 // »»»»»»»»»»»»»»»»»»»║ FONTS
 @import url('https://fonts.googleapis.com/css?family=Fresca|Josefin+Sans|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Acme|Amatic+SC|Audiowide|Gloria+Hallelujah|Kaushan+Script|Montserrat+Alternates|Muli|Orbitron|Rancho|Rock+Salt');
 
 // »»»»»»»»»»»»»»»»»»»║ VARIABLES
-$color-one: #f2f2f2;
-$color-two: #061F3E;
-$color-three: #595C80;
-$primary-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$color-one: #EEF1F5; //light contrast
+$color-two: #17A9DF; //highlight
+// $color-three: #F4EDDD; //light background
+$color-three: radial-gradient(right, #F4EDDD 25%, #D3D0D9 150%); //light background
+$color-four: #061F3E; //dark contrast
+$alpha-background: rgba(0, 0, 0, 0.7);
 $title-height: 40px;
 $outline-text: 0px 1px 1px black;
 $drop-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
+$font-one: 'Muli', sans-serif;
+$font-two: 'Rock Salt', cursive;
+$font-three: 'Rancho', cursive;
 
 // »»»»»»»»»»»»»»»»»»»║ TESTS
 @mixin box-tester {
@@ -19,7 +25,14 @@ $drop-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
 // »»»»»»»»»»»»»»»»»»»║ Mixins
 // ...............╪ styles ╪
 @mixin borders {
-    border: 2px solid $color-one;
+    border: 1px solid $color-one;
+    border-radius: 2px;
+}
+
+@mixin border-open-bottom {    
+    border-top: 2px solid $color-four;
+    border-right: 2px solid $color-four;
+    border-left: 2px solid $color-four;
     border-radius: 3px;
 }
 
@@ -28,39 +41,45 @@ $drop-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
     @mixin titles {
         height: 30px;
         line-height: 30px;
-        font-size: 1.5em;
+        font-size: 1.7em;
         width: 100%;
         color: $color-one; 
-        font-family: $primary-font;
+        font-family: $font-three;
+        letter-spacing: 2px;
     }
 
     @mixin modal-title-text {
         margin-bottom: -6px;
+        letter-spacing: 2px;
         line-height: $title-height;
         color: $color-one;
         text-shadow: $outline-text;
-        font-family: $primary-font;
+        font-family: $font-three;
         font-size: 1.4em;
         height: $title-height;
     }
 
     @mixin standard-text {
-        font-family: $primary-font;
-        font-size: 12px;
-        letter-spacing: 2px;
+        font-family: $font-one;
+        font-size: 13px;
+        letter-spacing: 2.3px;
         text-shadow: $outline-text;
-        line-height: 15px;
         padding: 5px;    
+        line-height: 17px;
     }
 
 // ...............╪ buttons ╪
     @mixin navButtons {
-        font-family: $primary-font;
-        font-size: 1em;
+        font-family: $font-three;
+        font-size: 1.5em;
+        color: $color-four;
     }
 
     @mixin nav-button-hover {
-        background: $color-two;
+        font-family: $font-two;
+        font-size: 0.8em;
+        padding-top:10px;
+        background: $color-four;
         color: $color-one;
         box-shadow: $drop-shadow;
         text-shadow: $outline-text;

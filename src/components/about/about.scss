@@ -14,7 +14,8 @@
     max-width: 1440px;
     width: 1000px; 
     text-align: center;
-    background: rgba(0, 0, 0, .7);
+    background: $alpha-background;
+    @include border-open-bottom;
 }
 
 .title-container {
@@ -93,9 +94,14 @@
 .about-text {
     color: $color-one;
     @include standard-text;
+    line-height: 15px;
+}
+
+.highlight-link {
+    color: $color-two;
 }
 
 .link :hover {
     text-decoration-line: underline;
-    color: $color-three;
+    color: $color-two;
 }
