@@ -1,7 +1,4 @@
-/* div {
-    background: rgba(0, 0, 0, .05);
-    border: 1px solid red;
-} */
+@import '../_varsAndMixins';
 
 .nav-wrapper {
     width: 100vw;
@@ -10,8 +7,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-     /* margin-bottom: 20px;  */
-    /* border-bottom: 1px solid black; */
     box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
     z-index: 1000;
 }
@@ -44,16 +39,12 @@
 
 .links-container li:hover {
     /* background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #00A3EF 100%); */
-    background: #061F3E;
-    color: white;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
-    text-shadow: 0px 1px 1px black;
-    cursor: pointer;
-    border-radius: 3px;
+    @include nav-button-hover;
 }
 
 .links-container li {
     margin-left: 10px;
     list-style: none;
     padding: 5px;
+    @include navButtons;
 }

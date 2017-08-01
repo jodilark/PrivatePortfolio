@@ -35,8 +35,8 @@ export default function Portfolio() {
             <div className='port-piece-container' id='project-1'>
                 <div className='port-info'>
                     <ul>
-                        <li>{projects[0].siteName} | <a href={projects[0].link} target='_blank'>{projects[0].link}</a></li>
-                        <li>Github: <a href={projects[0].github} target='blank'>{projects[0].github}</a></li>
+                        <li>{projects[0].siteName} | <span className='link'><a href={projects[0].link} target='_blank'>{projects[0].link}</a></span></li>
+                        <li>Github: <span className='link'><a href={projects[0].github} target='blank'>{projects[0].github}</a></span></li>
                         <li>Tech: <span>{projects[0].tech}</span></li>
                         <li>Role: <span>{projects[0].role}</span></li>
                         <li>Description: <span>{projects[0].description}</span></li>
@@ -47,8 +47,8 @@ export default function Portfolio() {
                 <div className='port-piece-container' id='project-2'></div>
                 <div className='port-info' id='info-2'>
                     <ul>
-                        <li>{projects[1].siteName} | <a href={projects[1].link} target='_blank'>{projects[1].link}</a></li>
-                        <li>Github: <a href={projects[1].github} target='blank'>{projects[1].github}</a></li>
+                        <li>{projects[1].siteName} | <span className='link'><a href={projects[1].link} target='_blank'>{projects[1].link}</a></span></li>
+                        <li>Github: <span className='link'><a href={projects[1].github} target='blank'>{projects[1].github}</a></span></li>
                         <li>Tech: <span>{projects[1].tech}</span></li>
                         <li>Role: <span>{projects[1].role}</span></li>
                         <li>Description: <span>{projects[1].description}</span></li>
@@ -60,7 +60,7 @@ export default function Portfolio() {
             <div className='port-piece-container' id='project-3'>
                 <div className='port-info' id='info-3'>
                     <ul>
-                        <li>{projects[2].siteName} | <a href={projects[2].link} target='_blank'>{projects[2].link}</a></li>
+                        <li>{projects[2].siteName} | <span className='link'><a href={projects[2].link} target='_blank'>{projects[2].link}</a></span></li>
                         <li>Tech: <span>{projects[2].tech}</span></li>
                         <li>Role: <span>{projects[2].role}</span></li>
                         <li>Description: <span>{projects[2].description}</span></li>
