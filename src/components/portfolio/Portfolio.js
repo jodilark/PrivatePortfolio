@@ -42,51 +42,57 @@ export default function Portfolio() {
     ]
     return (
         <div className='portfolio-wrapper'>
-            <p className='role-title-text'>Web Developer Projects</p>
-             <div className='mobile-container'>
-                <div id={projects[0].code}></div>
-                <div className='port-info'>
-                    <ul>
-                        <li>{projects[0].siteName} |</li>
-                        <li>Github: <span className='link'><a href={projects[0].github} target='blank'>{projects[0].github}</a></span></li>
-                        <li>Tech: <span>{projects[0].tech}</span></li>
-                        <li>Role: <span>{projects[0].role}</span></li>
-                        <li>Description: <span>{projects[0].description}</span></li>
-                    </ul>
+            <div className='portfolio-container'>
+                <div className='web-dev'>
+                    <p className='role-title-text'>Web Developer Projects</p>
+                    <div className='mobile-container'>
+                        <div id={projects[0].code}></div>
+                        <div className='port-info'>
+                            <ul>
+                                <li>{projects[0].siteName} |</li>
+                                <li>Github: <span className='link'><a href={projects[0].github} target='blank'>{projects[0].github}</a></span></li>
+                                <li>Tech: <span>{projects[0].tech}</span></li>
+                                <li>Role: <span>{projects[0].role}</span></li>
+                                <li>Description: <span>{projects[0].description}</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='port-piece-container' id={projects[1].code}>
+                        <div className='port-info'>
+                            <ul>
+                                <li>{projects[1].siteName} | <span className='link'><a href={projects[1].link} target='_blank'>{projects[1].link}</a></span></li>
+                                <li>Github: <span className='link'><a href={projects[1].github} target='blank'>{projects[1].github}</a></span></li>
+                                <li>Tech: <span>{projects[1].tech}</span></li>
+                                <li>Role: <span>{projects[1].role}</span></li>
+                                <li>Description: <span>{projects[1].description}</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='mobile-container'>
+                        <div id={projects[2].code}></div>
+                        <div className='port-info'>
+                            <ul>
+                                <li>{projects[2].siteName} | <span className='link'><a href={projects[2].link} target='_blank'>{projects[2].link}</a></span></li>
+                                <li>Github: <span className='link'><a href={projects[2].github} target='blank'>{projects[2].github}</a></span></li>
+                                <li>Tech: <span>{projects[2].tech}</span></li>
+                                <li>Role: <span>{projects[2].role}</span></li>
+                                <li>Description: <span>{projects[2].description}</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className='port-piece-container' id={projects[1].code}>
-                <div className='port-info'>
-                    <ul>
-                        <li>{projects[1].siteName} | <span className='link'><a href={projects[1].link} target='_blank'>{projects[1].link}</a></span></li>
-                        <li>Github: <span className='link'><a href={projects[1].github} target='blank'>{projects[1].github}</a></span></li>
-                        <li>Tech: <span>{projects[1].tech}</span></li>
-                        <li>Role: <span>{projects[1].role}</span></li>
-                        <li>Description: <span>{projects[1].description}</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div className='mobile-container'>
-                <div id={projects[2].code}></div>
-                <div className='port-info'>
-                    <ul>
-                        <li>{projects[2].siteName} | <span className='link'><a href={projects[2].link} target='_blank'>{projects[2].link}</a></span></li>
-                        <li>Github: <span className='link'><a href={projects[2].github} target='blank'>{projects[2].github}</a></span></li>
-                        <li>Tech: <span>{projects[2].tech}</span></li>
-                        <li>Role: <span>{projects[2].role}</span></li>
-                        <li>Description: <span>{projects[2].description}</span></li>
-                    </ul>
-                </div>
-            </div>
-            <p className='role-title-text'>UX/UI Designer Projects</p>
-            <div className='port-piece-container' id={projects[3].code}>
-                <div className='port-info'>
-                    <ul>
-                        <li>{projects[3].siteName} | <span className='link'><a href={projects[3].link} target='_blank'>{projects[3].link}</a></span></li>
-                        <li>Tech: <span>{projects[3].tech}</span></li>
-                        <li>Role: <span>{projects[3].role}</span></li>
-                        <li>Description: <span>{projects[3].description}</span></li>
-                    </ul>
+                <div className='ux-ui'>
+                    <p className='role-title-text'>UX/UI Designer Projects</p>
+                    <div className='port-piece-container' id={projects[3].code}>
+                        <div className='port-info'>
+                            <ul>
+                                <li>{projects[3].siteName} | <span className='link'><a href={projects[3].link} target='_blank'>{projects[3].link}</a></span></li>
+                                <li>Tech: <span>{projects[3].tech}</span></li>
+                                <li>Role: <span>{projects[3].role}</span></li>
+                                <li>Description: <span>{projects[3].description}</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

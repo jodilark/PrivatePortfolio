@@ -1,6 +1,7 @@
 // »»»»»»»»»»»»»»»»»»»║ FONTS
 @import url('https://fonts.googleapis.com/css?family=Fresca|Josefin+Sans|Source+Code+Pro');
 @import url('https://fonts.googleapis.com/css?family=Acme|Amatic+SC|Audiowide|Gloria+Hallelujah|Kaushan+Script|Montserrat+Alternates|Muli|Orbitron|Rancho|Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 // »»»»»»»»»»»»»»»»»»»║ VARIABLES
 $color-one: #EEF1F5; //light contrast
@@ -8,13 +9,14 @@ $color-two: #17A9DF; //highlight
 // $color-three: #F4EDDD; //light background
 $color-three: radial-gradient(right, #F4EDDD 25%, #D3D0D9 150%); //light background
 $color-four: #061F3E; //dark contrast
+$color-five: #000; //dark contrast
 $alpha-background: rgba(0, 0, 0, 0.7);
 $title-height: 40px;
 $outline-text: 0px 1px 1px black;
 $drop-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
 $font-one: 'Muli', sans-serif;
 $font-two: 'Rock Salt', cursive;
-$font-three: 'Rancho', cursive;
+$font-three: 'Poppins', sans-serif;
 
 // »»»»»»»»»»»»»»»»»»»║ TESTS
 @mixin box-tester {
@@ -71,7 +73,7 @@ $font-three: 'Rancho', cursive;
 // ...............╪ buttons ╪
     @mixin navButtons {
         font-family: $font-three;
-        font-size: 1.5em;
+        font-size: 1em;
         color: $color-four;
     }
 
