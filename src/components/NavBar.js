@@ -4,7 +4,7 @@ import '../styles/NavBar.css';
 export default class NavBar extends Component {
     render() {
         return (
-            <div className='nav-wrapper'>
+            <div className='nav-wrapper' >
                 <div className='logo-wrapper'>
                     <div className='logo-container'></div>
                 </div>
@@ -15,7 +15,7 @@ export default class NavBar extends Component {
                         <li onClick={_ => this.props.actionShowContact()}>Contact</li>
                     </ul>
                 </div>
-            </div>
+            </div >
         )
     }
 };
