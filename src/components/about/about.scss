@@ -1,43 +1,17 @@
 @import '../../_varsAndMixins';
 
 .about-wrapper {
-    z-index: 50;
-    max-height:524px;
-    height:60vh;
-    padding: 0px 10px;
-    position: fixed; 
-    bottom:0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 235px;
-    max-width: 1440px;
-    width: 1000px; 
-    text-align: center;
-    background: $color-five;
-    @include border-open-bottom;
-}
-
-.title-container {
-    width: 100%;
-    height: $title-height;
-    border-bottom: 1px solid $color-one;
-    display: flex;
+    height: 75vh;
+    width: 100vw;
+    background: url('../../assets/backgrounds/map.png');
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.about-wrapper li {
-    list-style: none;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height:70px;
-}
 
 .title-container-text {
     @include modal-title-text;
@@ -45,18 +19,22 @@
 
 
 .profile {
+    // @include box-tester;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    flex: 1;
 }
 
 .profile-container {
+    // @include box-tester;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100%; 
+    width: 75vw;
 }
 
 .profile-container div {
@@ -85,10 +63,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.closingX {
-    @include closing-x;
 }
 
 .about-text {

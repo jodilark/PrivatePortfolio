@@ -4,15 +4,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 // »»»»»»»»»»»»»»»»»»»║ VARIABLES
-$color-one: #EEF1F5; //light contrast
-$color-two: #17A9DF; //highlight
+$color-one: #EAEAEA; //light contrast
+$color-two: #86C232; //highlight
 // $color-three: #F4EDDD; //light background
-$color-three: radial-gradient(right, #F4EDDD 25%, #D3D0D9 150%); //light background
-$color-four: #061F3E; //dark contrast
-$color-five: #000; //dark contrast
-$alpha-background: rgba(0, 0, 0, 0.7);
+$color-three: radial-gradient(right, #222629 25%, #474B4F 150%); //light background
+$color-four: #61892F; //dark contrast
+$color-five: #222629; //dark contrast
+$color-six: #474B4F; //dark contrast
+$color-seven: #6B6E70; //dark contrast
+$alpha-background: rgba(255, 255, 255, 0.85);
 $title-height: 40px;
-$outline-text: 0px 1px 1px black;
+$outline-text: 0px 1px 1px 5px 86C232;
 $drop-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
 $font-one: 'Muli', sans-serif;
 $font-two: 'Rock Salt', cursive;
@@ -44,7 +46,6 @@ $font-three: 'Poppins', sans-serif;
         height: 30px;
         line-height: 30px;
         font-size: 1.7em;
-        width: 100%;
         color: $color-one; 
         font-family: $font-three;
         letter-spacing: 2px;
@@ -74,15 +75,12 @@ $font-three: 'Poppins', sans-serif;
     @mixin navButtons {
         font-family: $font-three;
         font-size: 1em;
-        color: $color-four;
+        color: $color-seven;
     }
 
     @mixin nav-button-hover {
-        font-family: $font-two;
-        font-size: 0.8em;
         padding-top:10px;
-        background: $color-four;
-        color: $color-one;
+        color: $color-two;
         box-shadow: $drop-shadow;
         text-shadow: $outline-text;
         cursor: pointer;

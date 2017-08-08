@@ -1,5 +1,10 @@
 import React from 'react';
+import LandingPage from '../landingPage/LandingPage'
+import Skills from '../skills/Skills'
+import About from '../about/About'
+import Contact from '../contact/Contact'
 import './portfolio.css'
+import $ from 'jquery'
 
 export default function Portfolio() {
     const projects = [
@@ -42,59 +47,61 @@ export default function Portfolio() {
     ]
     return (
         <div className='portfolio-wrapper'>
-            <div className='portfolio-container'>
-                <div className='web-dev'>
-                    <p className='role-title-text'>Web Developer Projects</p>
-                    <div className='mobile-container'>
-                        <a href={projects[0].github} target='_blank' id={projects[0].code}></a>
-                        <div className='port-info'>
-                            <ul>
-                                <li><span className='info-header'>{projects[0].siteName}</span> |</li>
-                                <li><span className='info-header'>Github:</span> <span className='link'><a href={projects[0].github} target='blank'>{projects[0].github}</a></span></li>
-                                <li><span className='info-header'>Tech:</span> <span>{projects[0].tech}</span></li>
-                                <li><span className='info-header'>Role:</span> <span>{projects[0].role}</span></li>
-                                <li><span className='info-header'>Description:</span> <span>{projects[0].description}</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href={projects[1].link} target='_blank' className='port-piece-container' id={projects[1].code}>
-                        <div className='port-info'>
-                            <ul>
-                                <li><span className='info-header'>{projects[1].siteName}</span> | <span className='link'><a href={projects[1].link} target='_blank'>{projects[1].link}</a></span></li>
-                                <li><span className='info-header'>Github:</span> <span className='link'><a href={projects[1].github} target='blank'>{projects[1].github}</a></span></li>
-                                <li><span className='info-header'>Tech:</span> <span>{projects[1].tech}</span></li>
-                                <li><span className='info-header'>Role:</span> <span>{projects[1].role}</span></li>
-                                <li><span className='info-header'>Description:</span> <span>{projects[1].description}</span></li>
-                            </ul>
-                        </div>
-                    </a>
-                    <div className='mobile-container'>
-                        <a href={projects[2].link} target='_blank' id={projects[2].code}></a>
-                        <div className='port-info'>
-                            <ul>
-                                <li><span className='info-header'>{projects[2].siteName}</span> | <span className='link'><a href={projects[2].link} target='_blank'>{projects[2].link}</a></span></li>
-                                <li><span className='info-header'>Github:</span> <span className='link'><a href={projects[2].github} target='blank'>{projects[2].github}</a></span></li>
-                                <li><span className='info-header'>Tech:</span> <span>{projects[2].tech}</span></li>
-                                <li><span className='info-header'>Role:</span> <span>{projects[2].role}</span></li>
-                                <li><span className='info-header'>Description:</span> <span>{projects[2].description}</span></li>
-                            </ul>
-                        </div>
-                    </div>
+            <LandingPage />
+            <div className='type-container webdev'>
+                <div className='role-title-text'>
+                    <div className='title-text'>Web Developer Projects</div>
                 </div>
-                <div className='ux-ui'>
-                    <p className='role-title-text'>UX/UI Designer Projects</p>
-                    <a href={projects[3].link} target='_blank' className='port-piece-container' id={projects[3].code}>
-                        <div className='port-info'>
-                            <ul>
-                                <li><span className='info-header'>{projects[3].siteName}</span> | <span className='link'><a href={projects[3].link} target='_blank'>{projects[3].link}</a></span></li>
-                                <li><span className='info-header'>Tech:</span> <span>{projects[3].tech}</span></li>
-                                <li><span className='info-header'>Role:</span> <span>{projects[3].role}</span></li>
-                                <li><span className='info-header'>Description:</span> <span>{projects[3].description}</span></li>
-                            </ul>
+                <div className='projects-wrapper'>
+                    <div className='multi-wrapper'>
+                        <div className='project'>
+                            <div className='project-title'>Charmi</div>
+                            <div className='project-info' id='charmi-info'>
+                                <div className='project-info-text'>
+                                    <ul>
+                                        <li><span className='info-header'>{projects[0].siteName}</span></li>
+                                        <li><span className='info-header'>Github:</span> <span className='link'><a href={projects[0].github} target='blank'>{projects[0].github}</a></span></li>
+                                        <li><span className='info-header'>Tech:</span> <span>{projects[0].tech}</span></li>
+                                        <li><span className='info-header'>Role:</span> <span>{projects[0].role}</span></li>
+                                        <li><span className='info-header'>Description:</span> <span>{projects[0].description}</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className='mobile'>
+                                <div id='charmi'></div>
+                            </div>
+                            <div className='framework'>React</div>
                         </div>
-                    </a>
+                        <div className='project'>
+                            <div className='project-title'>All the things</div>
+                            <div id='att'></div>
+                            <div className='framework'>Angular</div>
+                        </div>
+                        <div className='project'>
+                            <div className='project-title'>FFXIV shopping list</div>
+                            <div className='mobile'>
+                                <div id='ffxiv'></div>
+                            </div>
+                            <div className='framework'>Angular</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div className='type-container design'>
+                <div className='role-title-text'>
+                    <div className='title-text'>UX/UI Projects</div>
+                </div>
+                <div className='projects-wrapper'>
+                    <div className='project'>
+                        <div className='project-title'>3PL Central WMS</div>
+                        <div id='tpl'></div>
+                        <div className='framework'>Axure RP</div>
+                    </div>
+                </div>
+            </div>
+            <Skills />
+            <About />
+            <Contact />
         </div>
     )
 }

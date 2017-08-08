@@ -8,11 +8,14 @@ export default class NavBar extends Component {
                 <div className='logo-wrapper'>
                     <div className='logo-container'></div>
                 </div>
-                <div className='name-wrapper'><span className='my-titles'>Jodi Parker | UX/UI | Web Developer</span></div>
+                <div className='name-wrapper'><span className='my-titles'></span></div>
                 <div className='links-wrapper'>
                     <ul className='links-container'>
+                        <li onClick={_ => this.props.actionShowAbout()}>Web Developer Projects</li>
+                        <li onClick={_ => this.props.actionShowAbout()}>UI/UX Projects</li>
+                        <li onClick={_ => this.props.actionShowAbout()}>Skills</li>
                         <li onClick={_ => this.props.actionShowAbout()}>About Me</li>
-                        <li onClick={_ => this.props.actionShowContact()}>Contact</li>
+                        <li onClick={document.getElementById('contact').scrollIntoView()}>Contact</li>
                     </ul>
                 </div>
             </div >

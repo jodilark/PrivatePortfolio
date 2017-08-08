@@ -19,10 +19,14 @@
     width:46px;
 }
 
+.logo-container:hover {
+    opacity: 0.5;
+}
+
 .logo-container {
     height: 30px;
     width: 30px;
-    background: url('../assets/mylogo2.png');
+    background: url('../assets/mylogo4.png');
     background-size: cover;
     -webkit-animation-name: spin;
     -webkit-animation-duration: 1000ms;
