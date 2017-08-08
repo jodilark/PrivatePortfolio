@@ -15,7 +15,7 @@ export default class NavBar extends Component {
                         <li onClick={_ => this.props.actionShowAbout()}>UI/UX Projects</li>
                         <li onClick={_ => this.props.actionShowAbout()}>Skills</li>
                         <li onClick={_ => this.props.actionShowAbout()}>About Me</li>
-                        <li onClick={document.getElementById('contact').scrollIntoView()}>Contact</li>
+                        <li>Contact</li>
                     </ul>
                 </div>
             </div >
