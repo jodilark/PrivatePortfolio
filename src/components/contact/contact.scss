@@ -1,85 +1,66 @@
 @import '../../_varsAndMixins';
 
 .contact-wrapper {
-    z-index: 51;
     width:100vw;
-    height:200px;
-    position: fixed; 
-    bottom:0px;
+    height:25vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    background: $color-five;
+    align-items: center;
+    position: relative;
 }
 
 .contact-wrapper li {
     list-style: none;
 }
 
-.info {
-    height:70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    @include standard-text;
-    color: $color-one;
-}
-
-.contact-wrapper p {
-    @include modal-title-text;
-}
-
-.contact-container {
-    width: 385px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0px 10px;
-    background: $color-five;
-    @include border-open-bottom;
-}
-
-.info-wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social li {
-    width: 20px;
-    height: 50px;
-    margin: 0px 30px 0px 30px;
-    line-height: 50px;
-    cursor: pointer;
-}
-
-.social li :hover {
-    height: 25px;
-    width: 25px;
-    font-size: 28px;
-    line-height: 28px;
-    box-shadow: $drop-shadow;   
-    color: $color-three;
-}
-
 .fa {
-    height: 25px;
-    width: 25px;
-    font-size: 25px;
-    line-height: 25px;
-    color: $color-one;
+    font-size: 40px;
+    line-height: 40px;
+    color: $color-four;
+    margin: 0 20px;
 }
 
 a {
     text-decoration: none;
 }
 
+svg {
+    position: absolute;
+}
 
+.line {
+    stroke: $color-two;
+    stroke-width:1;
+}
+
+.contact-info-wrapper {
+    z-index: 5;
+    height: 62px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.one {
+    height: 100%;
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.two {
+    height: 100%;
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-text {
+    color: $color-seven;
+    display: inline;
+}

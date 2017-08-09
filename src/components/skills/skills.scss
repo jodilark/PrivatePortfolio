@@ -1,0 +1,172 @@
+@import '../../_varsAndMixins';
+
+.skills-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../assets/backgrounds/keyboard.png');
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-content-wrapper {
+    // @include box-tester;
+    flex:1;
+    padding:60px 30px;    
+}
+
+.skill-list-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    // @include box-tester;
+    height: 60%;
+    width: 100%;
+}
+
+.skill-and-text {
+    height: 160px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 25px;
+}
+
+.skill-text {
+    color: $color-one;
+    font-size: 28px;
+    text-align: center;
+}
+
+.skill {
+    height: 125px;
+    border: 2px solid $color-two;
+    border-radius: 5px;
+    background: $color-one;
+    padding: 10px;
+}
+
+
+//.....skill icons
+    #angular {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-0-angular.png');
+        background-size: cover;
+    }
+
+    #react {
+        height: 100%;
+        width: 112%;
+        background: url('../../assets/skill-1-react.png');
+        background-size: cover;
+        transform: translateX(-5px);
+    }
+
+    #js {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-2-js.png');
+        background-size: contain;
+        transform: translateX(16px);
+        background-repeat: no-repeat;
+    }
+
+    #jQuery {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-3-jQuery.png');
+        background-size: contain;
+        transform: translateX(9px);
+        background-repeat: no-repeat;
+    }
+
+    #node {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-4-node.png');
+        background-size: contain;
+        transform: translateX(6px);
+        background-repeat: no-repeat;
+    }
+
+    #exp {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-5-express.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #rest {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-06-rest.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #sql {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-07-sql.png');
+        background-size: contain;
+        transform: translateX(13px);
+        background-repeat: no-repeat;
+    }
+
+    #html {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-08-html.png');
+        background-size: contain;
+        transform: translateX(15px);
+        background-repeat: no-repeat;
+    }
+
+    #css {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-09-css.png');
+        background-size: contain;
+        transform: translateX(15px);
+        background-repeat: no-repeat;
+    }
+
+    #sass {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-10-sass.png');
+        background-size: contain;
+        transform: translateX(6px);
+        background-repeat: no-repeat;
+    }
+
+    #gulp {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-11-gulp.png');
+        background-size: contain;
+        transform: translateX(28px);
+        background-repeat: no-repeat;
+    }
+
+    #ps {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-12-ps.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #axure {
+        height: 100%;
+        width: 100%;
+        background: url('../../assets/skill-13-axure.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }

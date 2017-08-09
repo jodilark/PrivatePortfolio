@@ -1,0 +1,36 @@
+@import '../../_varsAndMixins';
+
+.landing-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../assets/backgrounds/smoke.png');
+    background-size:cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-text-wrapper {
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+#name {
+    text-align: center;
+    font-size: 3em;
+    color: $color-one; 
+    font-family: $font-three;
+    letter-spacing: 2px;
+}
+
+.text-wrapper {
+    display: inline-block;
+}
+
+.title-text {
+    @include titles;
+}

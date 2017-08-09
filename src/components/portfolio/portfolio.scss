@@ -1,134 +1,212 @@
 @import '../../_varsAndMixins';
 
-.portfolio-wrapper {
-    height: 100vh;
-    width: 100%;
-    margin-top: 53px;    
-    background: url('https://png.pngtree.com/element_origin_min_pic/17/07/09/19438a898a580b3976dbabeab240d109.jpg');
-    background-size: cover;
-    overflow-y: scroll;
-}
-
-// .portfolio-container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
-
-::-webkit-scrollbar {
-    width: 8px;
-    background: black;
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1);
-    opacity: 80%; 
-}
- 
-::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px white; 
-}
-
-.web-dev {
-    width: 100%;
-    height: 100%;
-    background: $color-four;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ux-ui {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #333;
-    padding: 10px;    
-}
-
-.port-piece-container {
-    height: 536px;
-    width: 100%;
-    max-width: 1100px;
-    position: relative;
-    margin-bottom: 50px;
-    @include borders;
-    background: purple;
-}
-
-.port-info {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    // line-height: 20px;
-    @include standard-text;
-    color: $color-one;
-    background: $alpha-background;
-}
-
-.port-info ul {
-    padding: 10px;
-}
-
-.port-info li {
-    list-style: none;
-}
-
-#charmi {
-    width: 300px;
-    height: 100%;
-    background: url('../../assets/charmi.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#att {
-    background: url('../../assets/anotherATT.PNG');
-    background-size: contain;
-}
-
-#ffxivsl {
-    width: 300px;
-    height: 100%;
-    background: url('../../assets/ffxivphone.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#tpl {
-    background: url('../../assets/receipt.png');
-    background-size: contain;
-}
-
-.mobile-container {
-    height: 536px;
-    width: 100%;
-    max-width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 35px;
-    @include borders;
-    background: rgba(0,0,0,0.3);
-    position: relative;
-}
 
 a {
     color: inherit;
 }
 
+.type-container {
+    // @include box-tester;
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.webdev {
+    background: $color-seven;
+}
+
+.design {
+    background: $color-six;
+}
 
 .role-title-text {
-    @include titles;
-    margin-bottom: 20px;
-    border-bottom: 2px solid $color-one;
+    // @include box-tester;
+    flex:.15;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.projects-wrapper {
+    // @include box-tester;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 30px 30px;
+}
+
+.multi-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.project {
+    // @include box-tester;
+    height: 472px;
+    width: 513px;
+    padding: 10px;
+    position: relative;
+    border: 2px solid $color-two;
+    border-radius: 5px;
+    background: $color-six;
+}
+
+.mobile {
+    // @include box-tester;
+    width: 275px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#charmi {
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/charmi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#att {
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/anotherATT.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ffxiv {
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/ffxivphone.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tpl {
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/receipt.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-title {
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    font-family: $font-three;
+    background: $color-four;
+    color: $color-one;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.framework {
+    height: 30px;
+    padding: 0px 10px;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    font-family: $font-three;
+    background: $color-two;
+    color: $color-one;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+    border-top-right-radius: 5px;   
+}
+
+.contain-me {
+    position: relative;
+}
+
+.project-info#charmi-info {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: $font-three;
+    background: $alpha-background;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info#att-info {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: $font-three;
+    background: $alpha-background;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info#ffxiv-info {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: $font-three;
+    background: $alpha-background;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info#tpl-info {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: $font-three;
+    background: $alpha-background;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info-text {
+    color: $color-five;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.project-info-text ul {
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-info-text li {
+    list-style: none;
 }
 
 .info-header {
-    color: $color-two;
+    font-weight: bold;
 }

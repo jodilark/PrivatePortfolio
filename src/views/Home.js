@@ -1,65 +1,62 @@
 import React, { Component } from 'react';
+import ReactDom from 'react'
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
+import { goToAnchor } from 'react-scrollable-anchor'
 import NavBar from '../components/NavBar';
 import Content from '../components/portfolio/Portfolio';
-import Contact from '../components/contact/Contact'
-import About from '../components/about/About'
 import '../styles/Home.css'
+import TweenLite from 'gsap'
+import scrollTo from '../../node_modules/gsap/ScrollToPlugin'
+import $ from 'jquery'
+import LandingPage from '../components/landingPage/LandingPage'
+import Skills from '../components/skills/Skills'
+import About from '../components/about/About'
+import Contact from '../components/contact/Contact'
+
+configureAnchors({ offset: -70, scrollDuration: 5000 })
 
 class Home extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            contactVisible: false
-            , aboutVisible: false
-        }
-        this.showContact = this.showContact.bind(this)
-        this.showAbout = this.showAbout.bind(this)
+        this.scroll = this.scroll.bind(this)
+        this.hoverInfo = this.hoverInfo.bind(this)
+        this.hoverInfoHide = this.hoverInfoHide.bind(this)
     }
 
-    showContact(props) {
-        if (this.state.aboutVisible === true) {
-            this.setState({
-                contactVisible: !this.state.contactVisible
-                , aboutVisible: false
-            })
-        }
-        else {
-            this.setState({
-                contactVisible: !this.state.contactVisible
-            })
-        }
+    componentWillMount() {
+
     }
 
-    showAbout(props) {
-        if (this.state.contactVisible === true) {
-            this.setState({
-                aboutVisible: !this.state.aboutVisible
-                , contactVisible: false
-            })
-        }
-        else {
-            this.setState({
-                aboutVisible: !this.state.aboutVisible
-            })
-        }
+    scroll(id) {
+        goToAnchor(id)
+        console.log(`got here`)
+    }
+
+    hoverInfo(project) {
+        // console.log(`hovered`)
+        $(`#${project}`).show()
+    }
+ 
+    hoverInfoHide(project) {
+        // console.log(`hidded`)
+        $(`#${project}`).hide()
     }
 
     render() {
         return (
             <div className='page-contents'>
-                <NavBar actionShowAbout={this.showAbout} actionShowContact={this.showContact}/>
-                <Content />
-                {
-                    this.state.contactVisible
-                        ? <Contact actionShowContact={this.showContact} />
-                        : null
-                }
-                {
-                    this.state.aboutVisible
-                        ? <About actionShowAbout={this.showAbout} />
-                        : null
-                }
+                <NavBar actionScroll={this.scroll} />
+                <div className='main-body'>
+                    <div id='landing'>
+                        <LandingPage /></div>
+                    <Content actionHoverInfo={this.hoverInfo} actionHoverInfoHide={this.hoverInfoHide} />
+                    <div id='skills'>
+                        <Skills /></div>
+                    <div id='about'>
+                        <About /></div>
+                    <Contact />
+                </div>
             </div>
         )
     }
