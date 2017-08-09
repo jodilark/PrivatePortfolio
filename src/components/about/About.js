@@ -3,7 +3,7 @@ import './about.css'
 
 export default class About extends Component {
     render() {
-        return (
+        return (          
             <div className='about-wrapper'>
                 <div className='type-container'>
                     <div className='role-title-text'>

@@ -1,10 +1,10 @@
 import React from 'react';
-import LandingPage from '../landingPage/LandingPage'
-import Skills from '../skills/Skills'
-import About from '../about/About'
-import Contact from '../contact/Contact'
 import './portfolio.css'
 import $ from 'jquery'
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
+import { goToAnchor } from 'react-scrollable-anchor'
+
+configureAnchors({offset: -70, scrollDuration: 5000})
 
 export default function Portfolio() {
     const projects = [
@@ -46,8 +46,7 @@ export default function Portfolio() {
         }
     ]
     return (
-        <div className='portfolio-wrapper'>
-            <LandingPage />
+        <div className='portfolio-wrapper' id='webdev'>
             <div className='type-container webdev'>
                 <div className='role-title-text'>
                     <div className='title-text'>Web Developer Projects</div>
@@ -87,7 +86,7 @@ export default function Portfolio() {
                     </div>
                 </div>
             </div>
-            <div className='type-container design'>
+            <div className='type-container design' id='design'>
                 <div className='role-title-text'>
                     <div className='title-text'>UX/UI Projects</div>
                 </div>
@@ -99,9 +98,6 @@ export default function Portfolio() {
                     </div>
                 </div>
             </div>
-            <Skills />
-            <About />
-            <Contact />
         </div>
     )
 }

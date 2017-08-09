@@ -3,8 +3,8 @@ import './contact.css'
 
 export default class Contact extends Component {
     render() {
-        return (
-            <div className='contact-wrapper' id='contact'>
+        return (                
+            <div className='contact-wrapper'>
                 <div className='contact-info-wrapper'>
                     <div className='one'>
                         <div className='contact-text'>jodilparker@gmail.com</div>
