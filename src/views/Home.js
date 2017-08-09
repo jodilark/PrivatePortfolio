@@ -20,11 +20,26 @@ class Home extends Component {
         super(props)
 
         this.scroll = this.scroll.bind(this)
+        this.hoverInfo = this.hoverInfo.bind(this)
+    }
+
+    componentWillMount() {
+
     }
 
     scroll(id) {
         goToAnchor(id)
         console.log(`got here`)
+    }
+
+    hoverInfo(project) {
+        console.log(`hovered`)
+        $(`#${project}`).show()
+    }
+ 
+    hoverInfoHide() {
+        console.log(`hidded`)
+        $(`#charmi-info`).hide()
     }
 
     render() {
@@ -34,7 +49,7 @@ class Home extends Component {
                 <div className='main-body'>
                     <div id='landing'>
                         <LandingPage /></div>
-                    <Content />
+                    <Content actionHoverInfo={this.hoverInfo} actionHoverInfoHide={this.hoverInfoHide} />
                     <div id='skills'>
                         <Skills /></div>
                     <div id='about'>
