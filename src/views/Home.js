@@ -21,6 +21,7 @@ class Home extends Component {
 
         this.scroll = this.scroll.bind(this)
         this.hoverInfo = this.hoverInfo.bind(this)
+        this.hoverInfoHide = this.hoverInfoHide.bind(this)
     }
 
     componentWillMount() {
@@ -33,13 +34,13 @@ class Home extends Component {
     }
 
     hoverInfo(project) {
-        console.log(`hovered`)
+        // console.log(`hovered`)
         $(`#${project}`).show()
     }
  
-    hoverInfoHide() {
-        console.log(`hidded`)
-        $(`#charmi-info`).hide()
+    hoverInfoHide(project) {
+        // console.log(`hidded`)
+        $(`#${project}`).hide()
     }
 
     render() {

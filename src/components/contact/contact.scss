@@ -36,6 +36,7 @@ svg {
 }
 
 .contact-info-wrapper {
+    z-index: 5;
     height: 62px;
     width: 100%;
     display: flex;
@@ -61,4 +62,5 @@ svg {
 
 .contact-text {
     color: $color-seven;
+    display: inline;
 }

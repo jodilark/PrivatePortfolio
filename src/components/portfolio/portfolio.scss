@@ -129,7 +129,53 @@ a {
     border-top-right-radius: 5px;   
 }
 
+.contain-me {
+    position: relative;
+}
+
 .project-info#charmi-info {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: $font-three;
+    background: $alpha-background;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info#att-info {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: $font-three;
+    background: $alpha-background;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info#ffxiv-info {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: $font-three;
+    background: $alpha-background;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info#tpl-info {
     z-index: 10;
     position: absolute;
     top: 0px;
