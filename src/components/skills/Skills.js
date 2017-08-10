@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './skills.css'
+import { Transition } from 'semantic-ui-react'
+import '../../../node_modules/semantic-ui-css/semantic.min.css'
 
 export default function Skills() {
     return (
