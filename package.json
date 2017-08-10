@@ -11,7 +11,9 @@
     "react-dom": "^15.6.1",
     "react-fontawesome": "^1.6.1",
     "react-scripts": "1.0.10",
-    "react-scrollable-anchor": "^0.4.2"
+    "react-scrollable-anchor": "^0.4.2",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.71.3"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",

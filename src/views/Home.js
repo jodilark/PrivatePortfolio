@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDom from 'react'
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
-import { goToAnchor } from 'react-scrollable-anchor'
+import ScrollableAnchor, { configureAnchors, goToAnchor } from 'react-scrollable-anchor'
 import NavBar from '../components/NavBar';
 import Content from '../components/portfolio/Portfolio';
 import '../styles/Home.css'
@@ -13,34 +12,21 @@ import Skills from '../components/skills/Skills'
 import About from '../components/about/About'
 import Contact from '../components/contact/Contact'
 
-configureAnchors({ offset: -70, scrollDuration: 5000 })
+
 
 class Home extends Component {
     constructor(props) {
         super(props)
 
-        this.scroll = this.scroll.bind(this)
-        this.hoverInfo = this.hoverInfo.bind(this)
-        this.hoverInfoHide = this.hoverInfoHide.bind(this)
     }
 
     componentWillMount() {
-
+        configureAnchors({ offset: -70, scrollDuration: 5000 })
     }
 
     scroll(id) {
         goToAnchor(id)
-        console.log(`got here`)
-    }
-
-    hoverInfo(project) {
-        // console.log(`hovered`)
-        $(`#${project}`).show()
-    }
- 
-    hoverInfoHide(project) {
-        // console.log(`hidded`)
-        $(`#${project}`).hide()
+        // console.log(`got here`)
     }
 
     render() {
@@ -50,7 +36,7 @@ class Home extends Component {
                 <div className='main-body'>
                     <div id='landing'>
                         <LandingPage /></div>
-                    <Content actionHoverInfo={this.hoverInfo} actionHoverInfoHide={this.hoverInfoHide} />
+                    <Content />
                     <div id='skills'>
                         <Skills /></div>
                     <div id='about'>

@@ -142,7 +142,7 @@ a {
     width: 100%;
     font-family: $font-three;
     background: $alpha-background;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
