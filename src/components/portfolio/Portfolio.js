@@ -65,7 +65,7 @@ export default class Portfolio extends Component {
                                     <div className='project-info' id='charmi-info'>
                                         <div className='project-info-text'>
                                             <ul>
-                                                <li><span className='info-header'>{projects[0].siteName}</span></li>
+                                                <li><span className='info-header'>{projects[0].siteName}:</span> <span className='link'><a href={projects[0].link} target='blank'>{projects[0].link}</a></span></li>
                                                 <li><span className='info-header'>Github:</span> <span className='link'><a href={projects[0].github} target='blank'>{projects[0].github}</a></span></li>
                                                 <li><span className='info-header'>Tech:</span> <span>{projects[0].tech}</span></li>
                                                 <li><span className='info-header'>Role:</span> <span>{projects[0].role}</span></li>
