@@ -70,7 +70,7 @@ a {
 #charmi {
     width: 100%;
     height: 100%;
-    background: url('../../assets/charmi.png');
+    background: url('../../assets/charmi2.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -78,8 +78,9 @@ a {
 #att {
     width: 100%;
     height: 100%;
-    background: url('../../assets/anotherATT.PNG');
-    background-size: cover;
+    margin-top:86px;
+    background: url('../../assets/att.png');
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
