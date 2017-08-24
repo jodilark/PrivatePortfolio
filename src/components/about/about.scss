@@ -1,14 +1,13 @@
 @import '../../_varsAndMixins';
 
 .about-wrapper {
-    height: 75vh;
     width: 100vw;
     background: url('../../assets/backgrounds/map.png');
     background-size:cover;
     background-attachment: fixed;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 }
 
@@ -24,38 +23,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    padding: 0px 20px 20px;
 }
 
-.profile-container {
-    // @include box-tester;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%; 
-    width: 75vw;
-}
-
-.profile-container div {
-    flex: 2;
-    height: 85%;
-    padding:20px;
-    text-align: left;
-}
-
-.picture-container {
-    height: 400px;
+.profile-picture-container {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 26%;
+    border: 2px solid $color-one; 
+    margin-bottom: 20px;
 }
 
 #me-picture {
     background: url('../../assets/jodaSmall.jpg');
     background-size: cover;
-    border-radius: 26%;
-    border: 2px solid $color-one; 
+    background-position: center;
 }
 
 .text-container {
@@ -78,4 +64,43 @@
 .link :hover {
     text-decoration-line: underline;
     color: $color-two;
+}
+
+.aboutType {
+    // @include box-tester;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.the-about-container {
+    // @include box-tester;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-content: center;
+}
+
+@media(min-width: 761px) {
+    .about-wrapper {
+        height: 75vh;
+    }
+}
+
+@media(min-width: 1078px) {
+    .profile {
+        height: 100%;
+        flex-direction: row;
+        padding: 0px 80px;
+    }
+
+    .profile-picture-container {
+        margin: 0px 20px;
+        width: 300vh;
+        height: 300px;
+    }
 }

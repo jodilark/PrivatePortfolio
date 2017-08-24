@@ -43,7 +43,7 @@ $font-three: 'Poppins', sans-serif;
 
 // ...............╪ text ╪
     @mixin titles {
-        height: 30px;
+        // height: 30px;
         line-height: 30px;
         font-size: 1.7em;
         color: $color-one; 

@@ -29,6 +29,9 @@ export default class Contact extends Component {
                         <Transition visible={this.state.email} animation='fade left' duration={500}>
                             <span className='link' id='email-link'><div className='contact-text'>jodilparker@gmail.com</div></span>
                         </Transition>
+                        <div className='static'>
+                            <div className='contact-text'>jodilparker@gmail.com</div>
+                        </div>
                         <div className='social fa fa-envelope-square'></div>
                     </a>
                     <div className='two'
@@ -36,9 +39,14 @@ export default class Contact extends Component {
                         onMouseLeave={this.togglePhone}
                     >
                         <div className='social fa fa-phone-square'></div>
+                        <div className='animated'>
                         <Transition visible={this.state.phone} animation='fade right' duration={500}>
                             <div className='contact-text'>801-949-6842</div>
                         </Transition>
+                        </div>
+                        <div className='static'>
+                            <div className='contact-text'>801-949-6842</div>
+                        </div>
                     </div>
                 </div>
                 <div className='contact-info-wrapper'>
@@ -51,6 +59,9 @@ export default class Contact extends Component {
                         <Transition visible={this.state.linked} animation='fade left' duration={500}>
                             <span className='link' id='linkedIn-link'><div className='contact-text'>https://www.linkedin.com/in/jodiparker</div></span>
                         </Transition>
+                        <div className='static'>
+                            <div className='contact-text'>linkedin.com/in/jodiparker</div>
+                        </div>
                         <div className='social fa fa-linkedin-square'></div>
                     </a>
                     <a className='two'
@@ -63,6 +74,9 @@ export default class Contact extends Component {
                         <Transition visible={this.state.git} animation='fade right' duration={500}>
                             <span className='link' id='github-link'><div className='contact-text'>https://github.com/jodilark</div></span>
                         </Transition>
+                        <div className='static'>
+                            <div className='contact-text'>github.com/jodilark</div>
+                        </div>
                     </a>
                 </div>
                 <svg height="124" width="500">
