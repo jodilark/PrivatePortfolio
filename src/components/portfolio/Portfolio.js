@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
         return (
             <div className='portfolio-wrapper' id='webdev'>
                 <div className='type-container webdev'>
-                    <div className='role-title-text'>
+                    <div className='role-title-text' id='multi'>
                         <div className='title-text'>Web Developer Projects</div>
                     </div>
                     <div className='projects-wrapper'>
@@ -57,7 +57,9 @@ export default class Portfolio extends Component {
                                         </div>
                                     </div>
                                 </Transition>
-                                <div id='att'></div>
+                                <div className='desktop'>
+                                    <div id='att'></div>
+                                </div>
                                 <div className='framework'>Angular</div>
                             </div>
                             <div className='project' onMouseEnter={this.toggleFfxiv} onMouseLeave={this.toggleFfxiv}>
@@ -88,7 +90,7 @@ export default class Portfolio extends Component {
                         <div className='title-text'>UX/UI Projects</div>
                     </div>
                     <div className='projects-wrapper'>
-                        <div className='project' onMouseEnter={this.toggleTpl} onMouseLeave={this.toggleTpl}>
+                        <div className='single-project' onMouseEnter={this.toggleTpl} onMouseLeave={this.toggleTpl}>
                             <div className='project-title'>3PL Central WMS</div>
                             <Transition visible={this.state.tplVisible} animation='slide up' duration={500}>
                                 <div className='project-info' id='tpl-info'>
@@ -103,7 +105,9 @@ export default class Portfolio extends Component {
                                     </div>
                                 </div>
                             </Transition>
-                            <div id='tpl'></div>
+                            <div className='singleton'>
+                                <div id='tpl'></div>
+                            </div>
                             <div className='framework'>Axure RP</div>
                         </div>
                     </div>

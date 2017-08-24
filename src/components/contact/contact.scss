@@ -64,3 +64,25 @@ svg {
     color: $color-seven;
     display: inline;
 }
+
+.static {
+    display: none;
+}
+
+@media(max-width: 600px) {
+    .animated {
+        display: none;
+    }
+
+    .static {
+        display: inline-block;
+    }
+
+    .contact-text {
+        font-size: 10px;
+    }
+
+    .fa {
+        font-size: 25px;
+    }
+}

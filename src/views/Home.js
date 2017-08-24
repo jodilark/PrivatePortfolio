@@ -26,6 +26,7 @@ class Home extends Component {
 
     scroll(id) {
         goToAnchor(id)
+        $('.hamburger-container').hide()
         // console.log(`got here`)
     }
 
@@ -41,7 +42,8 @@ class Home extends Component {
                         <Skills /></div>
                     <div id='about'>
                         <About /></div>
-                    <Contact />
+                    <div id='contact'>
+                    <Contact /></div>
                 </div>
             </div>
         )

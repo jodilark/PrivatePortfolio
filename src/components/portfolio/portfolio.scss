@@ -7,7 +7,7 @@ a {
 
 .type-container {
     // @include box-tester;
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -43,6 +43,7 @@ a {
 
 .multi-wrapper {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -52,12 +53,26 @@ a {
 .project {
     // @include box-tester;
     height: 472px;
-    width: 513px;
+    flex: 1;
     padding: 10px;
     position: relative;
     border: 2px solid $color-two;
     border-radius: 5px;
     background: $color-six;
+    margin: 20px;
+}
+
+.single-project {
+    // @include box-tester;
+    height: 472px;
+    max-width: 600px;
+    width: 500px;
+    padding: 10px;
+    position: relative;
+    border: 2px solid $color-two;
+    border-radius: 5px;
+    background: $color-six;
+    margin: 20px;
 }
 
 .mobile {
@@ -65,6 +80,20 @@ a {
     width: 275px;
     margin: 0 auto;
     height: 100%;
+}
+
+.desktop {
+    width: 100%;
+    min-width: 275px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.singleton {
+    width: 100%;
+    min-width: 275px;
+    margin: 0 auto;
+    height: 100%;    
 }
 
 #charmi {
@@ -210,4 +239,46 @@ a {
 
 .info-header {
     font-weight: bold;
+}
+
+@media(max-width: 1077px){
+    .type-container.webdev {
+        // @include box-tester;
+        height: 1200px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    #multi.role-title-text {
+        // @include box-tester;
+        flex:.07;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media(max-width: 737px){
+    .type-container.webdev{
+        // @include box-tester;
+        height: 1600px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    #multi.role-title-text {
+        // @include box-tester;
+        flex:.03;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }

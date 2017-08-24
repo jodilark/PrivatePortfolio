@@ -6,8 +6,8 @@ import '../../../node_modules/semantic-ui-css/semantic.min.css'
 export default function Skills() {
     return (
         <div className='skills-wrapper'>
-            <div className='type-container'>
-                <div className='role-title-text'>
+            <div className='the-skills-container'>
+                <div className='the-role-title-text' id='skillset'>
                     <div className='title-text'>Skills</div>
                 </div>
                 <div className='skills-content-wrapper'>
