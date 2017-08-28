@@ -20,8 +20,8 @@ exports.projectList = [
     {
         siteName: 'Final Fantasy XIV Shopping List'
         , code: 'ffxivsl'
-        , link: 'http://cute-route.surge.sh/#!/'
-        , github: 'https://github.com/jodilark/noServerProject'
+        , link: 'https://ffxiv-shopping-list.herokuapp.com/#!/'
+        , github: 'https://github.com/jodilark/ffxiv-shopping-list'
         , tech: ['Angular, ', 'Node']
         , role: 'Front-End Developer'
         , description: 'Add-on application for a video game that allows you to easily search for in-game content.'
